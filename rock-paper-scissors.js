@@ -1,39 +1,24 @@
-let userChoice = prompt("Rock, Paper, or Scissors?");
-let computerChoice = Math.floor(Math.random() * 3);
-
-const choiceToNum = (userString) => {
-    if (userString === 'Rock'){
-        userNum = 0;
-    }else if (userString === 'Paper') {
-        userNum = 1;
-    }else if (userString === 'Scissors'){
-        userNum = 2;
-    }else{
-        console.log ('Please enter "Rock" "Paper" or "Scissors:');
-    }
-    return userNum;
-}
-
-const winner = (user, computer) => {
-    if (user === computer){
+const winner = (userChoice) => {
+    let computerChoice = Math.floor(Math.random() * 3);
+    if (userChoice === computerChoice){
         result = "It's a tie!";
-    }else if (user === 0 && computer === 1){
+    }else if (userChoice === 0 && computer === 1){
         result = "You Lose";
-    }else if (user === 0 && computer === 2){
+    }else if (userChoice === 0 && computer === 2){
         result = "You Win";
-    }else if (user === 1 && computer === 0){
+    }else if (userChoice === 1 && computer === 0){
         result = "You Win";
-    }else if (user === 1 && computer === 2){
+    }else if (userChoice === 1 && computer === 2){
         result = "You Lose";
-    }else if (user === 2 && computer === 0){
+    }else if (userChoice === 2 && computer === 0){
         result = "You Lose";
-    }else if (user === 2 && computer === 1){
+    }else if (userChoice === 2 && computer === 1){
         result ="You Win";
     }
+    document.getElementById('result').innerText = result;
     return result;
 }
-console.log (computerChoice);
-choiceToNum (userChoice);
-winner (userNum, computerChoice);
-console.log (result);
-document.getElementById('result').innerText = result;
+
+document.getElementById('rock').addEventListener('click', winner(0));
+document.getElementById('rock').addEventListener('click', winner(1));
+document.getElementById('rock').addEventListener('click', winner(2));
