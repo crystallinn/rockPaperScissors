@@ -15,10 +15,16 @@ const winner = (userChoice) => {
     }else if (userChoice === 2 && computer === 1){
         result ="You Win";
     }
-    document.getElementById('result').innerText = result;
+    
     return result;
 }
 
-document.getElementById('rock').addEventListener('click', winner(0));
-document.getElementById('paper').addEventListener('click', winner(1));
-document.getElementById('scissors').addEventListener('click', winner(2));
+document.getElementById('rock').addEventListener('click', winner(0) {
+    document.getElementById('result').innerText = result;
+});
+document.getElementById('paper').addEventListener('click', winner(0) {
+    document.getElementById('result').innerText = result;
+});
+document.getElementById('scissors').addEventListener('click', winner(0) {
+    document.getElementById('result').innerText = result;
+});
