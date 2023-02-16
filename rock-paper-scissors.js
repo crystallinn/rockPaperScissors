@@ -19,12 +19,12 @@ const winner = (userChoice) => {
     return result;
 }
 
-document.getElementById('rock').addEventListener('click', winner(0) {
+document.getElementById('rock').addEventListener('click', winner(0)) {
     document.getElementById('result').innerText = result;
-});
-document.getElementById('paper').addEventListener('click', winner(0) {
+};
+document.getElementById('paper').addEventListener('click', winner(0)) {
     document.getElementById('result').innerText = result;
-});
-document.getElementById('scissors').addEventListener('click', winner(0) {
+};
+document.getElementById('scissors').addEventListener('click', winner(0)) {
     document.getElementById('result').innerText = result;
-});
+};
