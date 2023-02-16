@@ -20,5 +20,5 @@ const winner = (userChoice) => {
 }
 
 document.getElementById('rock').addEventListener('click', winner(0));
-document.getElementById('rock').addEventListener('click', winner(1));
-document.getElementById('rock').addEventListener('click', winner(2));
+document.getElementById('paper').addEventListener('click', winner(1));
+document.getElementById('scissors').addEventListener('click', winner(2));
