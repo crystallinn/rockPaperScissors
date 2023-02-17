@@ -1,3 +1,24 @@
+body{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.container{
+    display: flex;
+    text-align: center;
+}
+
+img{
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+}
 #result{
-    color: #00ffff;
+    color: #000000;
 }
