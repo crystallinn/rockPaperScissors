@@ -1,0 +1,19 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "The user can play Rock Paper Scissors against the \"computer\"",
+  "main": "rock-paper-scissors.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crystallinn/rockPaperScissors.git"
+  },
+  "author": "Crystal Linn Orcutt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crystallinn/rockPaperScissors/issues"
+  },
+  "homepage": "https://github.com/crystallinn/rockPaperScissors#readme"
+}
